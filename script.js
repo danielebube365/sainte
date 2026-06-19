@@ -34,13 +34,28 @@
     document.addEventListener('visibilitychange', () => { if (!document.hidden && v.paused) play(); });
   });
 
-  /* scroll reveal */
-  if ('IntersectionObserver' in window && !reduce) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
-    $$('.reveal').forEach(el => io.observe(el));
+  /* scroll reveal — scroll-position check (primary) + observer (backup) */
+  const reveals = new Set($$('.reveal'));
+  if (reduce) {
+    reveals.forEach(el => el.classList.add('in'));
   } else {
-    $$('.reveal').forEach(el => el.classList.add('in'));
+    const reveal = (el) => { if (!el.classList.contains('in')) { el.classList.add('in'); reveals.delete(el); } };
+    const check = () => {
+      const vh = window.innerHeight;
+      reveals.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.92 && r.bottom > 0) reveal(el);
+      });
+    };
+    requestAnimationFrame(check);
+    document.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => entries.forEach(e => e.isIntersecting && reveal(e.target)),
+        { threshold: 0.05 }
+      );
+      reveals.forEach(el => io.observe(el));
+    }
   }
 })();
