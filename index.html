@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Sainté is a café, brunch room and cocktail bar in Lekki Phase 1, Lagos. Open 24 hours, every day. Brunch by day, cocktails by night." />
+<meta property="og:title" content="Sainté · Café, Brunch & Cocktails | Lekki, Lagos" />
+<meta property="og:description" content="Brunch by day, cocktails by night. Open every hour, in the heart of Lekki." />
+<meta property="og:image" content="assets/hero.jpg" />
+<title>Sainté · Café, Brunch & Cocktails | Lekki, Lagos</title>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- topbar -->
+<div class="topbar">
+  <div class="topbar__in">
+    <span><span class="topbar__dot"></span>Open 24 hours · Every day</span>
+    <span class="topbar__sep">/</span>
+    <span class="topbar__loc">No 1a Chesachi Hani Okoroafor Close · Lekki Phase 1, Lagos</span>
+  </div>
+</div>
+
+<!-- nav -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a href="#top" class="nav__brand">SAINTÉ</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#space">The Space</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a href="https://wa.me/2349123000000" target="_blank" rel="noopener" class="nav__cta">Reserve</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="nav__mobile" id="navMobile" hidden>
+    <a href="#menu">Menu</a>
+    <a href="#space">The Space</a>
+    <a href="#visit">Visit</a>
+    <a href="https://wa.me/2349123000000" target="_blank" rel="noopener">Reserve</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero__bg"><img src="assets/hero.jpg" alt="The dining room at Sainté, Lekki" /></div>
+  <div class="hero__in">
+    <span class="hero__pill reveal"><span class="topbar__dot"></span>Open now · 24 hours</span>
+    <p class="hero__eyebrow eyebrow reveal" style="--d:.1s">Café · Brunch · Cocktails · Lekki</p>
+    <h1 class="hero__title display reveal" style="--d:.2s">Brunch by day,<br/><em>cocktails by night.</em></h1>
+    <p class="hero__sub reveal" style="--d:.32s">A café, a brunch room and a cocktail bar in the heart of Lekki, open every single hour of every day.</p>
+    <div class="hero__cta reveal" style="--d:.44s">
+      <a href="#menu" class="btn btn--ivory-solid">View the Menu</a>
+      <a href="https://wa.me/2349123000000" target="_blank" rel="noopener" class="btn btn--ivory">Reserve a Table</a>
+    </div>
+  </div>
+</section>
+
+<!-- intro statement -->
+<section class="intro section">
+  <span class="eyebrow reveal">Est. Lekki, Lagos</span>
+  <p class="display reveal" style="--d:.1s">Some places close. <em>Sainté never does.</em></p>
+  <p class="lead reveal" style="--d:.2s">Morning coffee, a long brunch, a late cocktail, or something at 3am. Whatever the hour, the doors are open, the music is on, and a table is waiting.</p>
+</section>
+
+<!-- menu -->
+<section class="section" id="menu">
+  <div class="sec-head sec-head--c reveal">
+    <span class="eyebrow">The Menu</span>
+    <h2 class="display">Served all day,<br/><em>and all night.</em></h2>
+    <div class="rule rule--c"></div>
+  </div>
+
+  <div class="menu__grid">
+    <article class="dish reveal">
+      <div class="dish__media"><img src="assets/brunch.jpg" alt="Latte art and a brunch plate at Sainté" loading="lazy" /></div>
+      <div class="dish__top"><span class="dish__num">01</span><h3 class="dish__name">Breakfast &amp; Brunch</h3></div>
+      <ul class="dish__items"><li>Shakshuka</li><li>Pancakes</li><li>Eggs &amp; Sides</li><li>Brunch Bowls</li><li>Pastries</li></ul>
+    </article>
+
+    <article class="dish reveal" style="--d:.12s">
+      <div class="dish__media"><img src="assets/spread.jpg" alt="A spread of main dishes at Sainté" loading="lazy" /></div>
+      <div class="dish__top"><span class="dish__num">02</span><h3 class="dish__name">Mains &amp; Sharing</h3></div>
+      <ul class="dish__items"><li>Pasta</li><li>Grills</li><li>Platters</li><li>Sides &amp; Fries</li><li>Chef's Specials</li></ul>
+    </article>
+
+    <article class="dish reveal">
+      <div class="dish__media"><img src="assets/cocktail.jpg" alt="A signature cocktail at Sainté" loading="lazy" /></div>
+      <div class="dish__top"><span class="dish__num">03</span><h3 class="dish__name">Cocktails &amp; Mocktails</h3></div>
+      <ul class="dish__items"><li>Signatures</li><li>Classics</li><li>Mocktails</li><li>Spirits</li><li>Wine</li></ul>
+    </article>
+
+    <article class="dish reveal" style="--d:.12s">
+      <div class="dish__media"><img src="assets/juices.jpg" alt="Cold-pressed Sainté juices" loading="lazy" /></div>
+      <div class="dish__top"><span class="dish__num">04</span><h3 class="dish__name">Coffee, Matcha &amp; Cold-Pressed</h3></div>
+      <ul class="dish__items"><li>Espresso</li><li>Matcha</li><li>Smoothies</li><li>Cold-Pressed Juice</li><li>Soft Drinks</li></ul>
+    </article>
+  </div>
+
+  <div class="menu__cta reveal">
+    <a href="https://sainte.cafe/" target="_blank" rel="noopener" class="btn btn--line">View the Full Menu</a>
+  </div>
+</section>
+
+<!-- motion strip -->
+<section class="motion">
+  <div class="section" style="padding-bottom:0">
+    <div class="sec-head reveal">
+      <span class="eyebrow">In Motion</span>
+      <h2 class="display">Poured, plated<br/><em>and served.</em></h2>
+    </div>
+  </div>
+  <div class="section" style="padding-top:clamp(2.4rem,5vw,3.6rem)">
+    <div class="motion__grid">
+      <figure class="motion__cell reveal"><video src="assets/clip1.mp4" poster="assets/clip1-poster.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption class="motion__cap">From the Bar</figcaption></figure>
+      <figure class="motion__cell reveal" style="--d:.12s"><video src="assets/clip2.mp4" poster="assets/clip2-poster.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption class="motion__cap">On the Plate</figcaption></figure>
+      <figure class="motion__cell reveal" style="--d:.24s"><video src="assets/clip3.mp4" poster="assets/clip3-poster.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption class="motion__cap">In the Cup</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- the space -->
+<section class="section" id="space">
+  <div class="sec-head reveal">
+    <span class="eyebrow">The Space</span>
+    <h2 class="display">A room made<br/><em>to linger in.</em></h2>
+  </div>
+  <div class="space__grid">
+    <figure class="space__big reveal"><img src="assets/hero.jpg" alt="Chandeliers and marble tables inside Sainté" loading="lazy" /></figure>
+    <div class="space__col">
+      <figure class="space__small reveal" style="--d:.12s"><img src="assets/space.jpg" alt="Lounge seating at Sainté" loading="lazy" /></figure>
+      <blockquote class="space__quote reveal" style="--d:.24s">"Soft light, marble tables and a glass for every hour. Whenever you arrive, Sainté is already awake."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 24h band -->
+<section class="band">
+  <p class="band__word reveal">Open <em>24 hours.</em> Always.</p>
+  <p class="band__sub reveal" style="--d:.1s">Lekki Phase 1 · Lagos</p>
+</section>
+
+<!-- visit -->
+<section class="section" id="visit">
+  <div class="visit__grid">
+    <div>
+      <div class="sec-head reveal" style="margin-bottom:2rem">
+        <span class="eyebrow">Visit</span>
+        <h2 class="display">Find us<br/><em>any hour.</em></h2>
+      </div>
+      <div class="reveal" style="--d:.1s">
+        <div class="vrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><div class="vrow__k">Address</div><div class="vrow__v">No 1a Chesachi Hani Okoroafor Close, Lekki Phase 1, Lagos</div></div></div>
+        <div class="vrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><div class="vrow__k">Hours</div><div class="vrow__v">Open 24 hours, every day</div></div></div>
+        <div class="vrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81 19.79 19.79 0 0 1 0 1.18 2 2 0 0 1 2 0h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L6.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><div class="vrow__k">Reservations</div><div class="vrow__v">WhatsApp 0912 300 0000</div></div></div>
+      </div>
+      <div class="visit__cta reveal" style="--d:.2s">
+        <a href="https://www.google.com/maps/search/?api=1&query=Sainte+Cafe+Bistro+Lekki+Phase+1+Lagos" target="_blank" rel="noopener" class="btn btn--solid">Get Directions</a>
+        <a href="https://instagram.com/sainte_cafe_bistro" target="_blank" rel="noopener" class="btn btn--line">@sainte_cafe_bistro</a>
+      </div>
+    </div>
+    <figure class="visit__fig reveal" style="--d:.15s"><img src="assets/bar.jpg" alt="A cocktail being made at the Sainté bar" loading="lazy" /></figure>
+  </div>
+</section>
+
+<!-- reserve -->
+<section class="reserve" id="reserve">
+  <div class="reserve__in">
+    <span class="eyebrow reveal">Pull Up a Chair</span>
+    <h2 class="display reveal" style="--d:.1s">Any hour <em>is the hour.</em></h2>
+    <p class="reveal" style="--d:.2s">Reserve a table over WhatsApp, or simply walk in. The coffee is on, the bar is stocked, and the kitchen never sleeps.</p>
+    <div class="reserve__cta reveal" style="--d:.3s">
+      <a href="https://wa.me/2349123000000" target="_blank" rel="noopener" class="btn btn--solid">Reserve on WhatsApp</a>
+      <a href="tel:+2349123000000" class="btn btn--line">Call 0912 300 0000</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__in">
+    <div class="footer__brand">SAINTÉ<span>Café · Brunch · Cocktails · Lekki</span></div>
+    <div class="footer__soc">
+      <a href="https://instagram.com/sainte_cafe_bistro" target="_blank" rel="noopener" aria-label="Sainté on Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85s.01-3.58.07-4.85C2.38 3.93 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0m0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88"/></svg></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Sainte+Cafe+Bistro+Lekki+Phase+1+Lagos" target="_blank" rel="noopener" aria-label="Sainté on the map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+    </div>
+  </div>
+  <p class="footer__copy">© <span id="year">2026</span> Sainté Café &amp; Bistro · Lekki Phase 1, Lagos · Website design concept</p>
+</footer>
+
+<a href="https://wa.me/2349123000000" target="_blank" rel="noopener" class="wa" aria-label="Reserve on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.477-.997zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
